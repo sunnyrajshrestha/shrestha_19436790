@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <img src="C:\Users\sunny\Desktop\portfolia\images\image1.jpg"><p>Sunny Raj Shrestha<p></header>
+
+    <div class="nav">
+
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="1">Gallery</a>
+
+    </div>
+    <div class="form1"><form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+      User Name: <input type="text" name="fname">
+      <input type="submit" value="Submit">
+
+
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Password:<input type="text" name="Password">
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<footer>
+  </footer>
+<img src="C:\Users\sunny\Desktop\portfolia\images\fam.jpg">
+  </body>
+</html>
