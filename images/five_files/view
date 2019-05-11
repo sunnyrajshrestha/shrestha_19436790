@@ -1,0 +1,38 @@
+(function(w, d, s) {
+  try {
+    d = w.top.document || d; w = w.top.document ? w.top : w;
+  } catch (e) {}
+  var ttag = function() {
+    var paragraphs = window.top.document.querySelectorAll(".story-body .story-body__inner > p, #story-body > p"),
+      wordCount = 0,
+      i = 0;
+    do {
+      wordCount += paragraphs[i].innerText.split(" ").length;
+      i++;
+    } while (wordCount < 175);
+    var _tt_slot = window.top.document.querySelectorAll(".story-body .story-body__inner > p, #story-body > p")[i -1];
+    w.teads.page(81189).placement(87890, {
+      "css":"margin: 24px auto 24px;",
+      "callbacks":{
+        "AdLoaded":function () {
+          window.top.document.querySelectorAll(".teads-ui-components-label")[0].onclick = function(){
+            window.open("//www.bbc.com/privacy/cookies/international/", "_blank"); 
+          };
+          window.top.document.querySelectorAll(".teads-ui-components-label")[0].style = "background-color: transparent; background-image: none; color:#505050 !important; font:bold 12px/12px helvetica,arial,sans-serif !important; letter-spacing:0 !important; padding-top: 0; text-decoration: none; text-transform:uppercase; cursor: pointer;";
+          window.top.document.querySelectorAll(".teads-ui-components-label")[0].innerHTML = "ADVERTISEMENT";
+        }
+      },
+      "format":"inread",
+      "slot":{
+        "btf":false,
+        "selector":_tt_slot,
+        "minimum":1
+      }
+    }).serve();
+  };
+  if (w.teads && w.teads.page) { ttag(); }
+  else if (!w.teadsscript) {
+    s.src = '//cdn.teads.tv/media/format/v3/teads-format.min.js';
+    s.async = true; s.onload = ttag; w.teadsscript = d.getElementsByTagName('head')[0].appendChild(s);
+  }
+})(window, document, document.createElement('script'));
