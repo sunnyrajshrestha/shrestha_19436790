@@ -7,6 +7,9 @@ header{
   padding: 5px 2px;
   font-size:20px;
 }
+.flex-container img{
+  width: 400px;
+}
 .link{
   display: flex;
   padding:10px;
@@ -30,6 +33,7 @@ header{
 }
 .flex-container {
   display: flex;
+  padding: 3%;
   background-color: #99ddff;
   flex-wrap: wrap;
   justify-content: space-around;

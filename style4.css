@@ -54,6 +54,9 @@ img{
   width: 100%;
   padding: 3px 0px;
 }
+form{
+  max-width: 500px;
+}
 footer{
   background-color: #000099;
   color: white;

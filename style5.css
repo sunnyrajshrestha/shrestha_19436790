@@ -34,15 +34,11 @@ header{
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.flex-container > div {
-  background-color: #e6ffff;
-  width: 25%;
+.flex-container iframe {
   margin: 5px;
-  text-align: center;
-  line-height: 20px;
-  font-size: 18px;
+  margin-top: 70px;
+  margin-bottom: 70px;
   padding: 2px 20px;
-  /*text-shadow: 3px 3px 8px #000066;*/
 }
 h4{
   padding: 0px 0px;
